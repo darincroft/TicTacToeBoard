@@ -18,7 +18,8 @@ TicTacToeBoard::TicTacToeBoard()
  * and returns whose turn it is
 **/
 Piece TicTacToeBoard::toggleTurn()
-{ If(turn == X){
+{ 
+  if(turn == X){
     turn = O;
   }
   else
