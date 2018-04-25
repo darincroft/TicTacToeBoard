@@ -18,8 +18,12 @@ TicTacToeBoard::TicTacToeBoard()
  * and returns whose turn it is
 **/
 Piece TicTacToeBoard::toggleTurn()
-{
-  return Invalid;
+{ If(turn == X){
+    turn = O;
+  }
+  else
+    turn = X;
+  return turn;
 }
 
 /**
@@ -33,7 +37,16 @@ Piece TicTacToeBoard::toggleTurn()
 **/ 
 Piece TicTacToeBoard::placePiece(int row, int column)
 {
-  return Invalid;
+  if(row > BOARDSIZE || column > BOARDSIZE || row < 0 || column < 0)
+    return Invalid;
+    
+  if(board[row][column] == Blank){
+    board[row][column] = turn;
+    toggleTurn();
+    return board[row][column];
+  }
+  else
+    return board[row][column];
 }
 
 /**
@@ -42,7 +55,9 @@ Piece TicTacToeBoard::placePiece(int row, int column)
 **/
 Piece TicTacToeBoard::getPiece(int row, int column)
 {
-  return Invalid;
+  if(row > BOARDSIZE || column > BOARDSIZE || row < 0 || column < 0)
+    return Invalid;
+  return board[row][column];
 }
 
 /**

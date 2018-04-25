@@ -20,3 +20,9 @@ TEST(TicTacToeBoardTest, sanityCheck)
 	ASSERT_TRUE(true);
 }
 */
+
+TEST(TicTacToeBoardTest, placeOOB)
+{
+	TicTacToeBoard obj;
+	ASSERT_EQ(Invalid, obj.placePiece(4, 4));
+}
