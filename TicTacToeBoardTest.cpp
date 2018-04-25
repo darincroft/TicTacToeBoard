@@ -26,3 +26,10 @@ TEST(TicTacToeBoardTest, placeOOB)
 	TicTacToeBoard obj;
 	ASSERT_EQ(Invalid, obj.placePiece(4, 4));
 }
+
+TEST(TicTacToeBoardTest, placeOverPiece)
+{
+	TicTacToeBoard obj;
+	obj.placePiece(0,0);
+	ASSERT_EQ(O, obj.placePiece(4, 4));
+}
