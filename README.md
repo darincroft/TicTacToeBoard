@@ -1,3 +1,5 @@
+https://travis-ci.org/darincroft/TicTacToeBoard.svg?branch=master
+
 # TicTacToeBoard
 
 ## Associated Enumerated Types
