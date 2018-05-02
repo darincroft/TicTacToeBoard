@@ -1,4 +1,4 @@
-https://travis-ci.org/darincroft/TicTacToeBoard.svg?branch=master
+[![Build Status](https://travis-ci.org/darincroft/TicTacToeBoard.svg?branch=master)](https://travis-ci.org/darincroft/TicTacToeBoard)
 
 # TicTacToeBoard
 
