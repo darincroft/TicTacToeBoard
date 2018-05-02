@@ -31,5 +31,5 @@ TEST(TicTacToeBoardTest, placeOverPiece)
 {
 	TicTacToeBoard obj;
 	obj.placePiece(0,0);
-	ASSERT_EQ(O, obj.placePiece(4, 4));
+	ASSERT_EQ(O, obj.placePiece(2, 2));
 }
